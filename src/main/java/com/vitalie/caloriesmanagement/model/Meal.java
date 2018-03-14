@@ -2,6 +2,7 @@ package com.vitalie.caloriesmanagement.model;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 public class Meal
 {
@@ -24,6 +25,11 @@ public class Meal
     public LocalDate getDate()
     {
         return dateTime.toLocalDate();
+    }
+
+    public LocalTime getTime()
+    {
+        return dateTime.toLocalTime();
     }
 
     public String getDescription()
